@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Re-init ECR Auth Token') {
             steps {
-               sh('/usr/bin/aws ecr get-login --no-include-email --region us-east-1 --no-include-email > auth-token.sh')
+               sh('aws ecr get-login --no-include-email --region us-east-1 --no-include-email > auth-token.sh')
                sh('chmod +x auth-token.sh')
                sh('sh auth-token.sh')
             }
