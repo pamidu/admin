@@ -24,7 +24,7 @@ echo $DESIRED_COUNT
 # fi
 
 # aws ecs update-service --cluster SI-Dev-Cluster --service ${SERVICE_NAME} --task-definition ${TASK_FAMILY}:${TASK_REVISION} --desired-count ${DESIRED_COUNT}
-OLDER_TASK=$(aws ecs list-tasks --cluster SI-Dev-Cluster --desired-status RUNNING --family ADMINPORTAL | egrep "task/" | sed -E "s/.*task\/(.*)\"/\1/")
+OLDER_TASK=$(aws ecs list-tasks --cluster PRS-DEV-CLUSTER --desired-status RUNNING --family ADMINPORTAL | egrep "task/" | sed -E "s/.*task\/(.*)\"/\1/")
 echo "Older Task running  " + $OLDER_TASK
-aws ecs stop-task --cluster SI-Dev-Cluster --task ${OLDER_TASK}
-aws ecs update-service --cluster SI-Dev-Cluster --service ${SERVICE_NAME} --task-definition ${TASK_FAMILY}:${TASK_REVISION} --desired-count "1"
+aws ecs stop-task --cluster PRS-DEV-CLUSTER --task ${OLDER_TASK}
+aws ecs update-service --cluster PRS-DEV-CLUSTER --service ${SERVICE_NAME} --task-definition ${TASK_FAMILY}:${TASK_REVISION} --desired-count "1"
