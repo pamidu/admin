@@ -1,9 +1,0 @@
-export const SET_AUTH_STATUS = 'SET_AUTH_STATUS';
-
-export const SET_BUTTON_LOADING = 'SET_BUTTON_LOADING';
-
-export const SET_HEADER_NAME = 'SET_HEADER_NAME';
-
-export const SET_SEARCH_PARAMS = "SET_SEARCH_PARAMS";
-
-export const SET_PAGE_NUMBER = 'SET_PAGE_NUMBER';
