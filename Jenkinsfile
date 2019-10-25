@@ -16,21 +16,21 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-               sh('/usr/bin/docker build -t 229004046319.dkr.ecr.us-east-1.amazonaws.com/procusys:Admin-Portal .')
+               sh('docker build -t 229004046319.dkr.ecr.us-east-1.amazonaws.com/procusys:Admin-Portal .')
                //sh('ls -al')
             }
         }
         stage('Re-init ECR Auth Token') {
             steps {
-               sh('/usr/bin/aws ecr get-login --no-include-email --region us-east-1 --no-include-email > auth-token.sh')
-               sh('/bin/chmod +x auth-token.sh')
-               sh('/bin/sh ./auth-token.sh')
+               sh('aws ecr get-login --no-include-email --region us-east-1 --no-include-email > auth-token.sh')
+               sh('chmod +x auth-token.sh')
+               sh('sh auth-token.sh')
             }
         }
         stage('Push Docker Image') {
             steps {
                 
-                sh('/usr/bin/docker push 229004046319.dkr.ecr.us-east-1.amazonaws.com/procusys:Admin-Portal')
+                sh('docker push 229004046319.dkr.ecr.us-east-1.amazonaws.com/procusys:Admin-Portal')
                 
                
 
@@ -38,7 +38,7 @@ pipeline {
         }
          stage('ECS Deploynment')   {
              steps {  
-             sh('/bin/sh ./ecs.sh')
+             sh('sh ecs.sh')
             }
         }
     }
