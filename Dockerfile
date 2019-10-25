@@ -1,21 +1,3 @@
-
-FROM node:12.2.0-alpine
-
-# Verbose log level.
-ENV NPM_CONFIG_LOGLEVEL warn
-
-# Copy all local files into the image.
-COPY . .
-
-# Build for production.
-RUN npm install
-RUN npm run build
-
-# Install `serve` to run the application.
-RUN npm install -g serve
-
-# Set the command to start the node server.
-CMD serve -s build
-
-# Tell Docker about the port we'll run on.
-EXPOSE 5000
+FROM httpd:2.4
+RUN mv /usr/local/apache2/htdocs/index.html /usr/local/apache2/htdocs/old_index.html
+COPY ./index.html /usr/local/apache2/htdocs/index.html
