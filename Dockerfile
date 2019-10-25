@@ -9,7 +9,7 @@ COPY . .
 
 # Build for production.
 RUN npm install
-RUN npm run build
+RUN npm build
 
 # Install `serve` to run the application.
 RUN npm install -g serve
