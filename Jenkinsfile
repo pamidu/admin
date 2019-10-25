@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-               sh('/usr/bin/docker build -t 767257458946.dkr.ecr.us-east-1.amazonaws.com/sins-dev:Admin-Portal .')
+               sh('/usr/bin/docker build -t 229004046319.dkr.ecr.us-east-1.amazonaws.com/procusys:Admin-Portal .')
                //sh('ls -al')
             }
         }
@@ -30,7 +30,7 @@ pipeline {
         stage('Push Docker Image') {
             steps {
                 
-                sh('/usr/bin/docker push 767257458946.dkr.ecr.us-east-1.amazonaws.com/sins-dev:Admin-Portal')
+                sh('/usr/bin/docker push 229004046319.dkr.ecr.us-east-1.amazonaws.com/procusys:Admin-Portal')
                 
                
 
