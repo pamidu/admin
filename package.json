@@ -1,0 +1,69 @@
+{
+  "name": "surroundinsurance-adminportal",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --port 3000 --open --history-api-fallback --hot",
+    "watch": "webpack-dev-server --mode development --port 3000 --open --history-api-fallback --hot --watch",
+    "build": "webpack --mode production"
+  },
+  "keywords": [
+    "React",
+    "Redux",
+    "Stripe",
+    "Webpack",
+    "Babel"
+  ],
+  "author": "Aeturnum",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/polyfill": "^7.4.0",
+    "axios": "^0.19.0",
+    "dotenv-webpack": "^1.7.0",
+    "eslint": "^5.15.3",
+    "jsonwebtoken": "^8.5.1",
+    "match-sorter": "^3.1.1",
+    "moment": "^2.24.0",
+    "postcss-import": "^12.0.1",
+    "query-string": "^6.4.2",
+    "react": "^16.8.5",
+    "react-datetime": "^2.16.3",
+    "react-dom": "^16.8.5",
+    "react-redux": "^6.0.1",
+    "react-router-dom": "^5.0.0",
+    "react-select": "^3.0.4",
+    "react-table": "^6.10.0",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "uuid": "^3.3.2",
+    "validator": "^10.11.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.5.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "postcss-cli": "^6.1.2",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^0.23.1",
+    "tailwindcss": "^0.7.4",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

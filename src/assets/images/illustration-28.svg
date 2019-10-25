@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="201" height="200" viewBox="0 0 201 200">
+    <g fill="none" fill-rule="evenodd">
+        <path stroke="#E9EEF1" stroke-dasharray="10,17" stroke-linecap="round" stroke-linejoin="round" stroke-width="9" d="M134 186.403s25.1 15.403 49.38-10.18c19.682-20.742-.04-76.115-44.448-68.511"/>
+        <g transform="translate(10 10)">
+            <path stroke="#C3C5C9" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" d="M113.035 47.007c4.913-.776 9.527 2.567 10.305 7.466l12.07 76.027-22.454 3.547-30.863 4.877-68.494 10.822-12.07-76.025c-.778-4.9 2.574-9.5 7.487-10.276l104.019-16.438z"/>
+            <path stroke="#C3C5C9" stroke-width="6" d="M25.518 60.639l-2.366-14.904C20.155 26.859 33.027 9.128 51.903 6.13l.025-.004C70.825 3.14 88.566 16.03 91.566 34.925l2.366 14.904"/>
+            <path fill="#C3C5C9" fill-rule="nonzero" d="M59.721 90.881A6 6 0 0 1 71.573 89l3.171 19.975a6 6 0 1 1-11.851 1.882L59.72 90.881z"/>
+            <ellipse cx="65.121" cy="87.288" fill="#C3C5C9" rx="11.403" ry="10.956" transform="rotate(-9 65.121 87.288)"/>
+        </g>
+        <path fill="#FFF" stroke="#898F9A" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" d="M96.059 121.006c-1.222.088-2.14 1.16-2.053 2.394l.009.09 6.235 57.937a2.224 2.224 0 0 0 2.413 2.023 2.216 2.216 0 0 0 1.605-.938l8.695-12.07 8.833 15.429a2.204 2.204 0 0 0 3.013.84l11.536-6.718a2.25 2.25 0 0 0 .797-3.079l-8.833-15.394 14.721-1.61a2.233 2.233 0 0 0 1.956-2.475 2.248 2.248 0 0 0-.881-1.548l-46.59-34.462a2.203 2.203 0 0 0-1.456-.42z"/>
+    </g>
+</svg>
