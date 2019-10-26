@@ -32,4 +32,4 @@ aws ecs stop-task --cluster PRS-DEV-CLUSTER --task ${OLDER_TASK}
 
 aws ecs update-service --cluster "PRS-DEV-CLUSTER" --service "${SERVICE_NAME}" --task-definition "${TASK_FAMILY}":"${REVISON_NUMBER}" --desired-count 1 --force-new-deployment
 #aws ecs update-service --cluster "PRS-DEV-CLUSTER" --service "apache" --task-definition "learn":"1" --desired-count 1 --force-new-deployment
-rm taskdef.jsom
+rm taskdef.json
