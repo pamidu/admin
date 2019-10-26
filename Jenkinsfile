@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-               sh('docker build -t 229004046319.dkr.ecr.us-east-1.amazonaws.com/learn:apache .')
+               sh('docker build -t 229004046319.dkr.ecr.us-east-1.amazonaws.com/learn:apache_v_${BUILD_NUMBER} .')
                //sh('ls -al')
             }
         }
@@ -30,7 +30,7 @@ pipeline {
         stage('Push Docker Image') {
             steps {
                 
-                sh('docker push 229004046319.dkr.ecr.us-east-1.amazonaws.com/learn:apache')
+                sh('docker push 229004046319.dkr.ecr.us-east-1.amazonaws.com/learn:apache_v_${BUILD_NUMBER}')
                 
                
 
