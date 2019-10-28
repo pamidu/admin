@@ -7,10 +7,10 @@
 # aws ecs update-service --cluster "SI-Dev-Cluster" --service "api-gw-service" --task-definition "APIGW":"1" --desired-count 1 --force-new-deployment
 #admin-portal-td.json
 #!/bin/bash
-SERVICE_NAME="apache"
+SERVICE_NAME="jayaranga"
 BUILD_NUMBER=${BUILD_NUMBER}
 IMAGE_VERSION="v_"${BUILD_NUMBER}
-TASK_FAMILY="learn"
+TASK_FAMILY="pamidu"
 # Create a new task definition for this build
 #sed -e "s;%BUILD_NUMBER%;${BUILD_NUMBER};g" apache.json > apache_v_${BUILD_NUMBER}.json
 #aws ecs register-task-definition --family learn --cli-input-json file://apache_v_${BUILD_NUMBER}.json
